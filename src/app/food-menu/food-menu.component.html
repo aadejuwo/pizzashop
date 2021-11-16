@@ -1,0 +1,37 @@
+<h1> Menu</h1>
+<link rel="stylesheet" href="food-menu.component.css">
+
+<!-- <div [formGroup]="foodMenu">
+    <div formGroupName="items">
+        <img src="https://www.simplyrecipes.com/thmb/HQJVIRwkySb-QiYv6saC9dEjU5A=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg"
+        style="width:90px;height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="https://buylocaldeals.com/media/reviews/photos/thumbnail/400x296s/30/74/3b/buy-any-dinner-get-free-garlic-bread-loaf-from-gennaro-s-20-1454620616.jpg"
+        style="width:90px;height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="https://st2.depositphotos.com/1050070/9344/i/950/depositphotos_93445870-stock-photo-coca-cola-sprite-cans.jpg"
+        class="center" style="width:90px;height:100px;">&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="https://cdn.loveandlemons.com/wp-content/uploads/2020/02/vegan-desserts.jpg" class="center"
+        style="width:90px;height:100px;">
+        <div formArrayName="checkboxes">
+            <div *ngFor="let i of data;let index = index">
+                <input type="checkbox" [formControlName]="index" >{{i.name}}
+                
+      </div><button class="btn btn-primary" (click)="addtocart(i)">Add to cart</button>
+     </div>
+     
+  </div>
+ 
+</div> -->
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory ">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong> ${{item.price}}</p>
+                <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+            </div>
+        </ng-container>
+
+    </div>
+</div>

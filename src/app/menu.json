@@ -1,0 +1,50 @@
+ [
+    {
+      "id": 1,
+      "title": "Pizza",
+      "price": 10,
+      "description": "chesse pizza",
+      "category": "Pizza",
+      "image": "../../assets/pizza-menu.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 2,
+      "title": "Garlic Bread",
+      "price": 5,
+      "description": "Garlic Pizza",
+      "category": "Bread",
+      "image": "../../assets/bread.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 259
+      }
+    },
+    {
+      "id": 3,
+      "title": "Drinks",
+      "price": 4,
+      "description": "Pepsi",
+      "category": "Beverage",
+      "image": "../../assets/beverage.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 500
+      }
+    },
+    {
+      "id": 4,
+      "title": "Desserts",
+      "price": 3,
+      "description": "choco lava",
+      "category": "chocolavq",
+      "image": "../../assets/dessert.jpg",
+      "rating": {
+        "rate": 2.1,
+        "count": 430
+      }
+    }
+  ]

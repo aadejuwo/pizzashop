@@ -1,0 +1,29 @@
+<h1>Delivery</h1>
+<div>
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm" >
+  <mat-form-field required>
+    <input matInput id="zip" placeholder="zip" name="zip" [(ngModel)]="zip" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="flat" placeholder="flat" name="flat" [(ngModel)]="flat" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="street" placeholder="street" name="street" [(ngModel)]="street" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="city" placeholder="city" name="city" [(ngModel)]="city" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="state" placeholder="state" name="state" [(ngModel)]="state" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="store" placeholder="store" name="store" [(ngModel)]="store" >
+  </mat-form-field ><br/><br/>
+  <p>
+    <button type="submit" mat-raised-button color = "primary">Submit</button>
+</p>
+<!-- </ng-container> -->
+
+</form>
+</div>
+

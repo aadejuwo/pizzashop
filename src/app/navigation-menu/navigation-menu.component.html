@@ -1,0 +1,36 @@
+<div>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+        <span>Navigation &nbsp;&nbsp;</span>
+    </button>
+    
+    <mat-menu #menu ="matMenu">
+        <!-- <button mat-menu-item routerLink = "/listCapstones">
+            <span>List Capstones</span>
+        </button>
+        <button mat-menu-item  routerLink = "/addCapstone"> 
+            <span>Add Capstone</span>
+        </button> -->
+        <button mat-menu-item  routerLink = "/listPayments"> 
+            <span>List Payment</span>
+        </button>
+        <button mat-menu-item  routerLink = "/addPayment"> 
+            <span>Add Payment</span>
+        </button>
+        <button mat-menu-item  routerLink = "/listDeliveryDetails"> 
+            <span>List Delivery Addresses</span>
+        </button>
+        <button mat-menu-item  routerLink = "/addDeliveryDetails"> 
+            <span>Add Delivery Addresses</span>
+        </button>
+        <button mat-menu-item routerLink = "/listItems">
+            <span>List Cart Items</span>
+        </button>
+        <button mat-menu-item routerLink = "/addItems">
+            <span>Menu</span>
+        </button>
+        <button mat-menu-item routerLink = "/getCartItems">
+            <span>Get Cart Items</span>
+        </button>
+    </mat-menu>
+</div>

@@ -1,0 +1,9 @@
+<div>
+    <ul *ngFor ="let delivery of deliveries let i = index">
+        <li> {{delivery._id}}: {{delivery.zip}} {{delivery.flat}} {{delivery.street}} 
+          {{delivery.city}} {{delivery.state}} {{delivery.store}} (index {{i}})
+          <button  (click)="onDelete(delivery._id)">DELETE</button>&nbsp;&nbsp;
+          <button mat-button color="accent" [routerLink]="['/editDeliveryDetails', delivery._id]">UPDATE</button> 
+        </li>
+    </ul>
+</div>

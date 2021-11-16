@@ -1,0 +1,80 @@
+<!-- <link rel="stylesheet" src="/src/app/pizzashop-payment/pizzashop-payment.component.css"> -->
+<!-- <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <h2>{{mode}}</h2>
+    <div >
+        <h3>Payment Information</h3>
+        <label for="NameOnCard">Name on card </label>
+        <input id="NameOnCard" type="text" formControlName="NameOnCard"/>
+
+        <label for="CardNumber">Card Number </label>
+        <input id="CardNumber" type="text" formControlName="CardNumber" />
+
+        <label for="Month">Month</label>
+        <input id="Month" type="text" formControlName="Month"/>
+
+        <label for="Year">Year </label>
+        <input id="Year" type="text" formControlName="Year"/>
+        
+        <label for="Cvv">Cvv </label>
+        <input id="Cvv" type="text" formControlName="Cvv"/>
+ 
+    </div>
+    <div  formGroupName="BillingAddress">
+            <label for ="Street">Street </label>
+            <input id="Street" type="text" formControlName="Street"/>
+
+            <label for ="Zip">Zip </label>
+            <input id="Zip" type="text" formControlName="Zip" (keyup)="getCityByZip()"/>
+
+            <label for ="City">City </label>
+            <input id="City" type="text" formControlName="City"/>
+
+            <label for ="State">State </label>
+            <input id="State" type="text" formControlName="State"/>
+    </div>
+    <div style="margin-top: 10px;">
+        <button type="submit" [disabled]="!profileForm.valid" style="display:block">submit</button></div>
+    
+    </form> -->
+    
+
+    
+<div>
+    <h1>Payment Information</h1>
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm" >
+  <mat-form-field required>
+    <input matInput id="NameOnCard" placeholder="Name On Card" name="NameOnCard" [(ngModel)]="NameOnCard" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="CardNumber" placeholder="Card Number" name="CardNumber" [(ngModel)]="CardNumber" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="Month" placeholder="Month" name="Month" [(ngModel)]="Month" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="Year" placeholder="Year" name="Year" [(ngModel)]="Year" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="Cvv" placeholder="Cvv" name="Cvv" [(ngModel)]="Cvv" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="Street" placeholder="Street" name="Street" [(ngModel)]="Street" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="Zip" placeholder="Zip" name="Zip" [(ngModel)]="Zip" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="City" placeholder="City" name="City" [(ngModel)]="City" >
+  </mat-form-field >
+  <mat-form-field required>
+    <input matInput id="State" placeholder="State" name="State" [(ngModel)]="State" >
+  </mat-form-field ><br/>
+  <p>
+    <button type="submit"  mat-raised-button color = "primary">submit</button>
+    <!-- <button type="submit" mat-raised-button color = "primary">Submit</button> -->
+</p>
+<!-- </ng-container> -->
+
+</form>
+</div>
+

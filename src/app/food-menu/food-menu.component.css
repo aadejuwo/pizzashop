@@ -1,0 +1,27 @@
+form {
+  padding-top: 0;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+  
+}
+/* div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+
+} */
+/* ProfileEditorComponent's private CSS styles */
+
+/* form {
+padding-top: 1rem;
+} */
+
+label {
+display: block;
+margin: .5em 0;
+/* font-weight: bold; */
+}
+body{
+padding: 0px !important;
+}
+    

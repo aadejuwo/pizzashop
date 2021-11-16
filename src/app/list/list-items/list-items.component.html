@@ -1,0 +1,137 @@
+
+<!-- <div>
+    <ul *ngFor ="let item of items let i = index">
+        <li> {{item._id}}: {{item.Pizza}}  {{item.Breads}}  {{item.Drinks}}  {{item.Desserts}}  {{item.Crust}}  {{item.Pepperoni}} 
+            {{item.ExtraCheese}}  {{item.Olives}}(index {{i}})
+            <button mat-button color="warn" (click)="onDelete(item._id)">DELETE</button> -->
+            <!-- <button mat-button color="accent" [routerLink]="['/editItem', item._id]">UPDATE</button> -->
+        <!-- </li>
+</ul>
+</div> -->
+<!-- <form [formGroup]="OrderManagement" (ngSubmit)="onSubmit()"> -->
+
+    <ng-container *ngIf = "true">
+     <div class="container">
+      <div class="card-table">
+        <div class="cart-product">
+          <table class="table table-responsive">
+            <thead>
+              <!-- <tr>
+                <th>Item ID</th>
+             
+                <th>Item Name</th>
+             
+                <th>Actions</th>
+
+              </tr> -->
+              <tr>
+                <th>Sr.No</th>
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <!-- <th>Total</th> -->
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor ="let item of items let i = index">
+                <td>{{i+1}}</td>
+                <td>{{item.title}}</td>
+                <td><img style="width: 120px;" src="{{item.image}}" alt=""></td>
+                <td style="width: 25%;">{{item.description}}</td>
+                <th style="width: 12%;">{{item.price}}</th>
+                <td style="width: 12%;">{{item.quantity}}</td>
+                <!-- <td style="width: 12%;">{{item.total}}</td> -->
+                <td>
+                    <button (click)="removeItem(item)"class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                    <button routerLink="addItems"  class="btn btn-primary">Update</button>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4"></td>
+                 <td> Total : ${{grandTotal}}
+              </td>
+                
+                <!-- <td><button (click)="onSubmit()" class="btn btn-success">Checkout</button></td> -->
+                <!-- <td><strong>Grand Total : ${{grandTotal}}</strong></td> -->
+            </tr>
+              <tr>
+                <td colspan="4"></td>
+                <td><button (click)="emptycart()" class="btn btn-danger">Empty Cart</button></td>
+                
+                <td><button (click)="onSubmit()" class="btn btn-success">Checkout</button></td>
+                <!-- <td><strong>Grand Total : ${{grandTotal}}</strong></td> -->
+            </tr>
+            </tbody>
+            <!-- <tbody>
+              <tr *ngFor ="let item of items let i = index">
+                <td>{{item._id}}</td> -->
+                <!-- <td> Image</td> -->
+                <!-- <td>{{item.Breads}}</td> -->
+                <!-- <td>Quantity</td> -->
+                <!-- <td>
+                  <button class="btn btn-danger" (click)="onDelete(item._id)"> <i class="fas fa-trash-alt"> DELETE</i></button>
+                  <button mat-button color="accent" [routerLink]="['/editItem', item._id]">UPDATE</button>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr *ngFor ="let item of items let i = index">
+                <td>{{item._id}}</td> -->
+                <!-- <td> Image</td> -->
+                <!-- <td>{{item.Drinks}}</td> -->
+                <!-- <td>Quantity</td> -->
+                <!-- <td>
+                  <button class="btn btn-danger" (click)="onDelete(item._id)"> <i class="fas fa-trash-alt"> DELETE</i></button>
+                  <button mat-button color="accent" [routerLink]="['/editItem', item._id]">UPDATE</button>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr *ngFor ="let item of items let i = index">
+                <td>{{item._id}}</td> -->
+                <!-- <td> Image</td> -->
+                <!-- <td>{{item.Desserts}}</td> -->
+                <!-- <td>Quantity</td> -->
+                <!-- <td>
+                  <button class="btn btn-danger" (click)="onDelete(item._id)"> <i class="fas fa-trash-alt"> DELETE</i></button>
+                  <button mat-button color="accent" [routerLink]="['/editItem', item._id]">UPDATE</button>
+                </td>
+              </tr>
+            </tbody> -->
+          </table>
+    
+          <!-- <button (click)="onSubmit()" id="bt" text-align="left">Submit</button> -->
+          
+        </div>
+      </div>
+     </div>
+    <!-- </ng-container>
+    <ng-container *ngIf="products.length ==0">
+      <div class="container">
+          <div class="card">
+              <h5 class="card-title">My Cart</h5>
+          </div>
+          <div class="center">
+              <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="">
+              <h4>Your cart is empty!</h4>
+              <h6>Add item to it now</h6>
+              <button routerLink="/products" class="btn btn-primary">Shop Now</button>
+          </div>
+      </div>
+  </ng-container> -->
+    <!-- </form>
+     -->
+    
+    
+    
+    <!-- <div>
+      <ul *ngFor ="let item of items let i = index">
+          <li> {{item._id}}: {{item.Pizza}} {{item.Breads}} {{item.Drinks}} {{item.Desserts}} {{item.Crust}}  (index {{i}})
+              <button mat-button color="warn" (click)="onDelete(item._id)">DELETE</button>
+              <button mat-button color="accent" [routerLink]="['/editItem', item._id]">UPDATE</button>
+          </li>
+    </ul>
+    </div>  -->

@@ -1,0 +1,87 @@
+<form [formGroup]="OrderManagement" (ngSubmit)="onSubmit()">
+
+<ng-container *ngIf = "true">
+ <div class="container">
+  <div class="card-table">
+    <div class="cart-product">
+      <table class="table table-responsive">
+        <thead>
+          <tr>
+            <th>Item ID</th>
+            <!-- <th>Image</th> -->
+            <th>Item Name</th>
+            <!-- <th>Quantity</th> -->
+            <th>Actions</th>
+            <!-- <th>Price</th>             -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor ="let item of items let i = index">
+            <td>{{item._id}}</td>
+            <!-- <td> Image</td> -->
+            <td>{{item.Pizza}}</td>
+            <!-- <td>Quantity</td> -->
+            <td>
+              <button class="btn btn-danger" (click)="onDelete(item._id)"> <i class="fas fa-trash-alt"> DELETE</i></button>
+              <button mat-button color="accent" [routerLink]="['/editItem', item._id]">UPDATE</button>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr *ngFor ="let item of items let i = index">
+            <td>{{item._id}}</td>
+            <!-- <td> Image</td> -->
+            <td>{{item.Breads}}</td>
+            <!-- <td>Quantity</td> -->
+            <td>
+              <button class="btn btn-danger" (click)="onDelete(item._id)"> <i class="fas fa-trash-alt"> DELETE</i></button>
+              <button mat-button color="accent" [routerLink]="['/editItem', item._id]">UPDATE</button>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr *ngFor ="let item of items let i = index">
+            <td>{{item._id}}</td>
+            <!-- <td> Image</td> -->
+            <td>{{item.Drinks}}</td>
+            <!-- <td>Quantity</td> -->
+            <td>
+              <button class="btn btn-danger" (click)="onDelete(item._id)"> <i class="fas fa-trash-alt"> DELETE</i></button>
+              <button mat-button color="accent" [routerLink]="['/editItem', item._id]">UPDATE</button>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr *ngFor ="let item of items let i = index">
+            <td>{{item._id}}</td>
+            <!-- <td> Image</td> -->
+            <td>{{item.Desserts}}</td>
+            <!-- <td>Quantity</td> -->
+            <td>
+              <button class="btn btn-danger" (click)="onDelete(item._id)"> <i class="fas fa-trash-alt"> DELETE</i></button>
+              <button mat-button color="accent" [routerLink]="['/editItem', item._id]">UPDATE</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button (click)="onSubmit()" id="bt" text-align="left">Submit</button>
+      
+    </div>
+  </div>
+ </div>
+</ng-container>
+
+</form>
+
+
+
+
+<!-- <div>
+  <ul *ngFor ="let item of items let i = index">
+      <li> {{item._id}}: {{item.Pizza}} {{item.Breads}} {{item.Drinks}} {{item.Desserts}} {{item.Crust}}  (index {{i}})
+          <button mat-button color="warn" (click)="onDelete(item._id)">DELETE</button>
+          <button mat-button color="accent" [routerLink]="['/editItem', item._id]">UPDATE</button>
+      </li>
+</ul>
+</div>  -->

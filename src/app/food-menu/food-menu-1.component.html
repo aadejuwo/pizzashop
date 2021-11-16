@@ -1,0 +1,72 @@
+<!-- <body> -->
+<h1> {{mode}}Menu</h1>
+<link rel="stylesheet" href="food-menu.component.css">
+<!-- <div> -->
+<form [formGroup]="FoodMenu" (ngSubmit)="onSubmit()">
+    <div>
+        <h4>Select your choice</h4>
+
+        <input type="checkbox" id="pizza" name="Pizza" value="Pizza" formControlName="Pizza">
+        &nbsp;&nbsp;Pizza&nbsp;&nbsp;
+        <img src="https://www.simplyrecipes.com/thmb/HQJVIRwkySb-QiYv6saC9dEjU5A=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg"
+            width="60" height="60">
+
+    </div>
+
+    <div>
+        <h4>Choose your base</h4>
+        <input type="radio" id="OriginalCrust" name="Crust" value="OriginalCrust" formControlName="Crust">
+        &nbsp;&nbsp;Original Crust&nbsp;&nbsp; 
+        <!-- <label for="OriginalCrust">Orginal Crust</label> -->
+
+        <input type="radio" id="ThinCrust" name="Crust" value="ThinCrust" formControlName="Crust">
+        &nbsp;&nbsp;Thin Crust&nbsp;&nbsp;   
+        <!-- <label for="ThinCrust">Thin Crust</label> -->
+         <input type="radio" id="GlutenCrust" name="Crust" value="GlutenCrust" formControlName="Crust">
+        &nbsp;&nbsp;Gluten Crust&nbsp;&nbsp;   
+        <!-- <label for="GlutenCrust">Gluten Crust</label> -->
+    </div>
+    <div>
+        <h4>Choose your toppings</h4>
+
+        <input type="checkbox" id="Pepperoni" name="Pepperoni" value="Pepperoni" formControlName="Pepperoni">
+        &nbsp;&nbsp;Pepperoni&nbsp;&nbsp;   
+        <!-- <label for="Pepperoni">Pepperoni</label> -->
+          <input type="checkbox" id="ExtraCheese" name="ExtraCheese" value="ExtraCheese"
+            formControlName="ExtraCheese">&nbsp;&nbsp;Extra Cheese&nbsp;&nbsp;
+        <!--   <label for="ExtraCheese">Extra Cheese</label> -->
+        <input type="checkbox" id="Olives" name="Olives" value="Olives" formControlName="Olives">
+         &nbsp;&nbsp;Olives&nbsp;&nbsp;
+        <!-- <label for="Olives">Olives</label> -->
+    </div>
+    <div>
+        <div>
+            <h4> Sides </h4>
+            <input type="checkbox" id="Breads" name="Breads" value="Breads" formControlName="Breads">
+            &nbsp;&nbsp;Breads&nbsp;&nbsp;
+            <img src="https://buylocaldeals.com/media/reviews/photos/thumbnail/400x296s/30/74/3b/buy-any-dinner-get-free-garlic-bread-loaf-from-gennaro-s-20-1454620616.jpg"
+                style="width:90px;height:100px;">
+        </div>
+        <div>
+            <div>
+                <input type="checkbox" id="Drinks" name="Drinks" value="Drinks" formControlName="Drinks">
+                &nbsp;&nbsp;Drinks&nbsp;&nbsp;
+                <img src="https://st2.depositphotos.com/1050070/9344/i/950/depositphotos_93445870-stock-photo-coca-cola-sprite-cans.jpg"
+                    class="center" style="width:90px;height:100px;">
+            </div>
+        </div>
+        <div>
+            <input type="checkbox" id="Desserts" name="Desserts" value="Desserts" formControlName="Desserts">
+            &nbsp;&nbsp;Desserts&nbsp;&nbsp;
+            <img src="https://cdn.loveandlemons.com/wp-content/uploads/2020/02/vegan-desserts.jpg" class="center"
+                style="width:90px;height:100px;">
+
+        </div>
+        <br>
+    </div>
+    <button (click)="onSubmit()" id="bt" text-align="left">Submit</button>
+
+</form>
+
+<!-- </div> -->
+<!-- </body> -->

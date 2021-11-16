@@ -1,0 +1,9 @@
+<div>
+    <ul *ngFor ="let payment of payments let i = index">
+        <li> {{payment._id}}: {{payment.NameOnCard}} {{payment.CardNumber}} {{payment.Month}} 
+          {{payment.Year}} {{payment.Cvv}} (index {{i}})
+          <button  (click)="onDelete(payment._id)">DELETE</button>&nbsp;&nbsp;
+          <button mat-button color="accent" [routerLink]="['/editPayment', payment._id]">UPDATE</button> 
+        </li>
+    </ul>
+</div>
